@@ -16,7 +16,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 90%; 
-    max-width: 500px; 
+    max-width: 500px;
+}
+
+h1 {
     color: #0077b6;
 }
 
@@ -47,24 +50,10 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #00557e;
-}
-
-
 @media (max-width: 600px) {
-  
+    
     .container {
         width: 95%; 
         max-width: 90%; 
     }
-}
-/
-.success-message {
-    background-color: #4CAF50; 
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    display: none; 
 }
