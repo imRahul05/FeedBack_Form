@@ -1,6 +1,7 @@
 
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+  
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
   //import firebase from 'firebase/app';
@@ -37,9 +38,13 @@
     var msg = getElementVal('feedback')
     
     savemsg(name,phone,emailid,satisfaction,msg);
-    console.log(name,phone,emailid,satisfaction,msg);
 
-    document.querySelector('.alert').display = 'block';
+    document.querySelector('.alert').style.display = 'block';
+    setTimeout(() => {
+        document.querySelector('.alert').style.display = 'none';
+
+    }, 4000);
+    document.getElementById('feedbackform').reset();
   }
 
 const savemsg = (name, phone, emailid, satisfaction, msg) => {
