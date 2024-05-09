@@ -57,3 +57,13 @@ button {
         max-width: 90%; 
     }
 }
+.alert{
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #0077b6;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}

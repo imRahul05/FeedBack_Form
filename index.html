@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Feedback Form</title>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script> -->
+
+    <title>FeedbackForm</title>
 </head>
 <body>
     <div class="container">
-        <h1>Feedback Form</h1>
-        <form id="feedback-form">
+        <h1>FeedbackForm</h1>
+        <form id="feedbackform">
+            <div class="alert">Feedback Submitted Succesfully</div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
@@ -31,9 +36,14 @@
             <label for="feedback">Specific Feedback:</label>
             <textarea id="feedback" name="feedback" rows="4" required></textarea>
             
-            <button type="submit">Submit</button>
+            <button type="submit"  class="submit">Submit</button>
         </form>
     </div>
-    <script src="script.js"></script>
+<!-- //    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
